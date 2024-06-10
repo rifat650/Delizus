@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #121217;
+}
+
+/* -------------------------navbar---------------------------- */
+.navbar {
+    background-color: #0F1111;
+}
+
+.navbar .container .main_column {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+
+}
+
+.navbar .container .main_column .left_column {
+    text-align: right;
+}
+
+.navbar .container .main_column .left_column img {
+    width: 45%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.navbar .container .main_column .right_column li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.navbar .container .main_column .right_column a {
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+    padding-right: 50px;
+    font-family: Oswald, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 25px;
+    transition: 0.2s;
+}
+
+.navbar .container .main_column .right_column a:hover {
+    color: #BE8642;
+}
+
+.navbar .container .main_column .right_column {
+    text-align: center;
+    align-self: center;
+
+}
+
+/*------------------------banner section------------------- */
+.banner_section .bgimg {
+    position: relative;
+    background: url(banner-modified.png);
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    background-position: center center;
+}
+
+.banner_section .bgimg::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.banner_section .main_div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.banner_section .main_div h1 {
+    color: aliceblue;
+    font-size: 60px;
+    font-family: Oswald, Arial, Helvetica, sans-serif;
+    line-height: 96px;
+    font-weight: 300;
+    letter-spacing: 18px;
+    text-transform: uppercase;
+
+}
+
+
+
+.banner_section .main_div p {
+    font-size: 18px;
+    color: rgb(202, 142, 70);
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 24px;
+    padding-bottom: 53px;
+
+}
+
+
+.banner_section .main_div #a1 {
+    text-decoration: none;
+    font-family: Oswald, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 60px;
+    background-color: transparent;
+    padding: 10px 30px 10px 30px;
+    letter-spacing: 1;
+    text-transform: uppercase;
+    /* margin-top: 40px; */
+    margin-right: 15px;
+}
+
+.banner_section .main_div #a2 {
+    background-color: #ca8e46;
+    text-decoration: none;
+    font-family: Oswald, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: whitesmoke;
+    border: 2px solid #ca8e46;
+    border-radius: 60px;
+    padding: 10px 30px 10px 30px;
+    letter-spacing: 1;
+    text-transform: uppercase;
+}
+
+/* -----------------service section-------------------- */
+.service_section {
+
+    background-color: transparent;
+
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
+
+.service_section .container .maindiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left
+}
+
+.service_section .container .maindiv .div1 img {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    margin-bottom: 15px;
+
+}
+
+.service_section .container .maindiv .div1 img:hover {
+    transform: scale(1.1);
+}
+
+.service_section .container .maindiv .div1 {
+    width: 40%;
+    height: 50vh;
+    margin-right: 30px;
+    padding-top: 20px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.service_section .container .maindiv .div1 h1 {
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 19px;
+    color: #ca8e46;
+}
+
+.service_section .container .maindiv .div1 p {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 25px;
+    color: rgb(153, 153, 153);
+}
+
+.service_section .container .maindiv .div1 a {
+    font-family: Oswald;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    text-underline-offset: 8px;
+    text-decoration-color: #BE8642;
+    text-decoration-thickness: 3px;
+    color: aliceblue;
+
+}
+
+/* --------------------------------about us section------------------------- */
+
+.aboutus {
+    margin-top: 474px;
+    background-color: #18181D;
+    padding-bottom: 0;
+}
+
+.aboutus .main_div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.aboutus .main_div .child_divs img {
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.aboutus .main_div .child_divs h1 {
+    font-family: Oswald, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 48px;
+    color: rgb(236, 239, 243);
+    letter-spacing: 10px;
+    margin-bottom: 30px;
+}
+
+.aboutus .main_div .child_divs h2 {
+    font-family: Allura;
+    font-style: italic;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 48px;
+    color: #BE8642;
+}
+
+.aboutus .main_div .child_divs hr {
+    width: 10%;
+    margin-top: 30px;
+    border: 1px solid #BE8642;
+}
+
+.aboutus .main_div .child_divs p {
+
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    color: rgb(153, 153, 153);
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.aboutus .main_div .child_divs a {
+    font-family: "Oswald";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: normal;
+    background-color: #ca8e46;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: aliceblue;
+    text-transform: uppercase;
+    transition: all 0.3s;
+
+}
+
+.aboutus .main_div .child_divs a:hover {
+    color: #121217;
+    background-color: aliceblue;
+}
+
+#text_div {
+    padding-top: 100px;
+    padding-right: 150px;
+    padding-left: 180px;
+    padding-bottom: 75px;
+
+}
+
+/* --------------------------spacial offer-------------------------- */
+.spacial_offer {
+    background-image: url(banner-modified.png);
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 0;
+
+}
+
+.spacial_offer::after {
+
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+}
+
+.spacial_offer .container .main_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    z-index: 3;
+}
+
+.spacial_offer .container .heading {
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+.spacial_offer .container .heading h2 {
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    font-size: 44px;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 30px;
+    line-height: 2em;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: aliceblue;
+    font-weight: 400;
+    position: relative;
+    z-index: 3;
+}
+
+.spacial_offer .container .heading h4 {
+    font-family: "Allura";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 48px;
+    color: rgb(202, 142, 70);
+    position: relative;
+    z-index: 3;
+}
+
+.spacial_offer .container .heading hr {
+    border: 2px solid #BE8642;
+    width: 10%;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    margin-left: 700px;
+    margin-top: 30px;
+    position: relative;
+    z-index: 3;
+}
+
+.spacial_offer .container .main_div .div1 img {
+    width: 360px;
+    height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+    transition: 0.4s;
+    position: relative;
+    z-index: 3;
+}
+
+.spacial_offer .container .main_div .div1 img:hover {
+    transform: scale(1.1);
+    position: relative;
+    z-index: 3;
+}
+
+/* ------------------------------our menu---------------------------- */
+
+.menu .main_div {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.menu .main_div h2 {
+
+    font-size: 44px;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 30px;
+    line-height: 2em;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 400;
+    color: aliceblue;
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+}
+
+h3 {
+
+    letter-spacing: normal;
+    font-family: "Allura";
+    font-size: 38px;
+    color: #BE8642;
+    font-weight: 400;
+    padding-bottom: 50px;
+
+}
+
+.menu .main_div hr {
+    border: 2px solid #ca8e46;
+    width: 5%;
+    margin-left: 900px;
+    margin-bottom: 40px;
+
+}
+
+.menu .main_div a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #F9F9FA;
+    font-size: 24px;
+    border: 2px solid #2A2A2F;
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    ;
+    padding: 6px 30px;
+    font-weight: 300;
+    margin-right: 15px;
+    transition: 0.3s;
+
+}
+
+.menu .main_div a:hover {
+    color: #BE8642;
+    border: 2px solid #BE8642;
+}
